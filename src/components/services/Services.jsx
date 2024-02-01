@@ -30,7 +30,7 @@ function Services() {
             data.map((item, index)=>(
                 <div className="col-12 col-sm-12 col-md-4">
                     <div className="services-card text-center">
-                        <video src={item.video} className="w-100"></video>
+                        <video src={item.video} className="w-100" controls loop muted autoPlay></video>
                         <h1 className="fs-4">{item.title}</h1>
                         <p className="lead">{item.description}</p>
                         <button className="btn bg-black text-white rounded-0 p-2 mt-3">Explore Gucci s Packaging</button>

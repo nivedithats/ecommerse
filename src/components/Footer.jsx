@@ -2,10 +2,10 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className='bg-black p-5'>
+    <footer className='bg-black p-2 p-md-5'>
         <div className="row">
             <div className="col-6 col-sm-6 col-md-3">
-                <h1 className="fs-6 text-light mb-3">MAY WE HELP YOU?</h1>
+                <h1 className="fs-6 text-secondary mb-3">MAY WE HELP YOU?</h1>
                 <ul className="p-0 text-white">
                 <li><a href="" className="text-white">Contact Us</a></li>
                 <li><a href="" className="text-white">My Order</a></li>
@@ -15,7 +15,7 @@ function Footer() {
                 </ul>
             </div>
             <div className="col-6 col-sm-6 col-md-3">
-                <h1 className="fs-6 text-light mb-3">MAY WE HELP YOU?</h1>
+                <h1 className="fs-6 text-secondary mb-3">MAY WE HELP YOU?</h1>
                 <ul className="p-0 text-white">
                 <li><a href="" className="text-white">About Gucci</a></li>
                 <li><a href="" className="text-white">Gucci Equilibrium</a></li>
@@ -28,14 +28,14 @@ function Footer() {
                 </ul>
             </div>
             <div className="col-12 col-sm-12 col-md-6">
-                <h1 className="fs-6 text-light mb-3">STORE LOCATOR</h1>
+                <h1 className="fs-6 text-secondary mb-3">STORE LOCATOR</h1>
                 <input type="text" className="form-control mb-4" placeholder='Country/region, city' />
                 <h1 className="fs-6 text-light">SIGN UP FOR GUCCI UPDATES</h1>
-                <p className='small mb-4 lead'>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our <a href="">Privacy Policy</a></p>
+                <p className='small mb-4 lead text-light'>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our <a href="">Privacy Policy</a></p>
                <input type="text" className="form-control mb-5" placeholder='Country/region, city' />
 
-                <h1 className="fs-4 text-light">COUNTRY/REGION</h1>
-                <p><a href="" className='text-white'>UNITED STATES</a></p>
+                <h1 className="fs-6 text-secondary">COUNTRY/REGION</h1>
+                <p className='mt-3'><a href="" className='text-white'>UNITED STATES</a></p>
             </div>
         </div>
     </footer>

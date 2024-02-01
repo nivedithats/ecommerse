@@ -15,3 +15,7 @@ footer ul li{
   letter-spacing: 1.3px;
   line-height: 2;
 }
+footer input:focus{
+  box-shadow: none !important;
+  border-bottom: 2px solid rgb(189, 152, 249) !important; 
+}

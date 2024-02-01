@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.css'
 
 function Featured() {
   return (
@@ -8,7 +9,7 @@ function Featured() {
             <div className="row align-items-center">
                 <div className="col-12 col-sm-12 col-md-6 mb-3">
                     <div className="featured-left">
-                    <img src="https://images.unsplash.com/photo-1619198511074-680af0a21527?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb24lMjBib3l8ZW58MHx8MHx8fDA%3D" alt="" className="w-100" />
+                    <img src="https://images.unsplash.com/photo-1619198511074-680af0a21527?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb24lMjBib3l8ZW58MHx8MHx8fDA%3D" alt=""  />
                     </div>
                 </div>
                 <div className="col-12 col-sm-12 col-md-6">
