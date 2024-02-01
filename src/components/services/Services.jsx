@@ -29,7 +29,7 @@ function Services() {
         {
             data.map((item, index)=>(
                 <div className="col-12 col-sm-12 col-md-4">
-                    <div className="services-card text-center">
+                    <div className="services-card text-center mb-3">
                         <video src={item.video} className="w-100" controls loop muted autoPlay></video>
                         <h1 className="fs-4">{item.title}</h1>
                         <p className="lead">{item.description}</p>
