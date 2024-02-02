@@ -2,4 +2,26 @@ header{
     position: sticky !important;
     top: 0;
     z-index: 1020;
+    border-bottom: 1px solid #000;
+}
+header .menu{
+    border: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+}
+#menu ul{
+    padding: 0;
+}
+#menu ul li{
+    margin-bottom: 20px;
+}
+#menu a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.nav-link{
+    font-size: 1.2rem !important;
+    color: #000 !important;
 }
