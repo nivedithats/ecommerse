@@ -31,7 +31,7 @@ function Footer() {
                 <h1 className="fs-6 text-secondary mb-3">STORE LOCATOR</h1>
                 <input type="text" className="form-control mb-4" placeholder='Country/region, city' />
                 <h1 className="fs-6 text-light">SIGN UP FOR GUCCI UPDATES</h1>
-                <p className='small mb-4 lead text-light'>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our <a href="">Privacy Policy</a></p>
+                <p className='small mb-4 text-light'>By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives. More details on this are provided in our <a href="">Privacy Policy</a></p>
                <input type="text" className="form-control mb-5" placeholder='Country/region, city' />
 
                 <h1 className="fs-6 text-secondary">COUNTRY/REGION</h1>
