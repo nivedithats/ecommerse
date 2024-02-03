@@ -4,12 +4,12 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
  const data = {
-    mainImage:"https://cdn.pixelspray.io/v2/black-bread-289bfa/YjKxP4/t.resize(w:800)/brooks-product/410270891003/665/410270891007_2.jpeg",
+    mainImage:"https://cdn.pixelspray.io/v2/black-bread-289bfa/YjKxP4/t.resize(w:800)/brooks-product/410391238008/665/410391238008_2_9104.webp",
     images:[
-        "https://cdn.pixelspray.io/v2/black-bread-289bfa/YjKxP4/t.resize(w:800)/brooks-product/410270891003/665/410270891007_2.jpeg",
-        "https://cdn.pixelspray.io/v2/black-bread-289bfa/YjKxP4/t.resize(w:800)/brooks-product/410270891003/665/410270891007_2.jpeg",
-        "https://cdn.pixelspray.io/v2/black-bread-289bfa/YjKxP4/t.resize(w:800)/brooks-product/410270891003/665/410270891007_2.jpeg",
-        "https://cdn.pixelspray.io/v2/black-bread-289bfa/YjKxP4/t.resize(w:800)/brooks-product/410270891003/665/410270891007_2.jpeg"
+        "https://cdn.pixelspray.io/v2/black-bread-289bfa/YjKxP4/t.resize(w:250)/brooks-product/410391238008/665/410391238008_1_6703.webp",
+        "https://cdn.pixelspray.io/v2/black-bread-289bfa/YjKxP4/t.resize(w:250)/brooks-product/410391238008/665/410391238008_2_9104.webp",
+        "https://cdn.pixelspray.io/v2/black-bread-289bfa/YjKxP4/t.resize(w:250)/brooks-product/410391238008/665/410391238008_3_8449.webp",
+        "https://cdn.pixelspray.io/v2/black-bread-289bfa/YjKxP4/t.resize(w:250)/brooks-product/410391238008/665/410391238008_4_7869.webp"
     ],
     product:"Cotton Twill Stretch Soho Chinos",
     description:"97% cotton, 3% spandex woven in Italy. Super soft with stretch for added comfort. Finished with heather grey details on interior and real corozo buttons.",
@@ -50,7 +50,7 @@ function ProductView() {
    }
 
    </Slider>
-  <div className="product-images p-2">
+  <div className="product-images">
   <div className="row">
                    
                    {
@@ -65,7 +65,7 @@ function ProductView() {
   </div>
         </div>
         <div className="col-12 col-md-6">
-            <div className="product-right p-3">
+            <div className="product-right p-0 p-md-3">
                 <h1 className="fs-3">{data.product}</h1>
                 <p className="lead">{data.description}</p>
 
