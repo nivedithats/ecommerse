@@ -50,7 +50,7 @@ function ProductView() {
    }
 
    </Slider>
-  <div className="product-images">
+  <div className="product-images mt-3">
   <div className="row">
                    
                    {
@@ -65,7 +65,7 @@ function ProductView() {
   </div>
         </div>
         <div className="col-12 col-md-6">
-            <div className="product-right p-0 p-md-3">
+            <div className="product-right p-0 p-md-3 py-5">
                 <h1 className="fs-3">{data.product}</h1>
                 <p className="lead">{data.description}</p>
 
