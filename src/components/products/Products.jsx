@@ -65,7 +65,9 @@ function Products() {
        {
             products.map((item, index)=>(
                <div className="col-12 col-sm-12 col-md-4 col-lg-3">
-                <div className="product-card mb-3 p-2 bg-white">
+               <a href="/product/view" className="text-decoration-none text-dark">
+
+               <div className="product-card mb-3 p-2 bg-white">
                     <img src={item.image} alt="" className="w-100" />
                     <span className="fs-5 d-block fw-bold">{item.title}</span>
                     <small className="small desc">{(item.desc).slice(0, 100)}</small>
@@ -74,6 +76,7 @@ function Products() {
                         <span className="fs-5">&#8377;{item.newPrice}</span>
                     </div>
                 </div>
+               </a>
                </div> 
             ))
           }

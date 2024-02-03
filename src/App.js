@@ -6,6 +6,7 @@ import './App.css'
 import Header from './components/header/Header'
 import Products from './components/products/Products'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import ProductView from './pages/productView/ProductView'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/products' element={<Products/>}/>
+        <Route path='/product/view' element={<ProductView/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>
