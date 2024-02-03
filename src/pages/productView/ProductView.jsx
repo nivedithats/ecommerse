@@ -21,6 +21,12 @@ import 'slick-carousel/slick/slick-theme.css';
     details:""
  }
 function ProductView() {
+    const image = {
+        src: 'path-to-your-image.jpg', // Replace with the actual path to your image
+        alt: 'Image Alt Text',
+        className: 'zoom-image', // Add any additional class names if needed
+      };
+    const [quantity, setQuantity] = useState(0)
     const [num, setNum] = useState(null)
     const Imagesettings = {
         dots: true,
@@ -86,7 +92,7 @@ function ProductView() {
                 <div className="row mt-2">
                     <div className="col-6">
                         <span className="fs-6">Sizes</span>
-                        <select name="" id="" className='form-control'>
+                        <select name="" id="" className='form-control p-3'>
                             <option disabled selected>Select Size</option>
                             {
                                 data.sizes.map((item, index)=>(
@@ -97,15 +103,23 @@ function ProductView() {
                     </div>
                     <div className="col-6">
                         <span className="fs-6">Quantinty</span>
-                        <input type="number" className="form-control" />
+                        <div className="quantity d-flex gap-3">
+                            <button className='btn bg-black text-white fs-4' onClick={()=>setQuantity(quantity+1)}><i className='bi bi-plus'></i></button>
+                        <input type="number" className="form-control" value={quantity} />
+                        <button className='btn bg-black text-white fs-4' onClick={()=>{
+                            if(quantity>=1){
+                                setQuantity(quantity-1)
+                            }
+                        }}><i className='bi bi-dash'></i></button>
+                        </div>
                     </div>
                 </div>
                 <div className="row mt-3 align-items-center">
                     <div className="col-10 col-md-8">
                         <button className="w-100 btn-dark btn p-3 bg-black rounded-0">ADD TO BAG</button>
                     </div>
-                    <div className="col-2 col-md-4">
-                        <button className="w-100 btn fs-2 p-3"><i className='bi bi-cart'></i></button>
+                    <div className="col-2 col-md-4 text-center">
+                        <button className="btn fs-2 cart"><i className='bi bi-cart'></i></button>
                     </div>
                 </div>
             </div>

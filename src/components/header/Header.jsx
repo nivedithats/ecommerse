@@ -6,10 +6,10 @@ function Header() {
   return (
     <header className=' bg-white'>
       <nav class="navbar navbar-expand-md">
-  <div class="container-fluid">
-  <a class="nav-link mx-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-  <h1 className="fs-5 d-inline"><i className='bi bi-plus'></i>Contact us</h1>
-</a>
+  <div class="container-fluid d-flex align-items-center justify-content-between">
+      <a class="nav-link mx-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+      <h1 className="fs-5 d-inline"><i className='bi bi-plus'></i>Contact us</h1>
+    </a>
     <img src={logo} alt="" width={80} className='mx-3' />
 
     <div class="collapse navbar-collapse d-none d-md-block" id="navbarSupportedContent">
@@ -27,8 +27,13 @@ function Header() {
       </ul>
         
     </div>
-    <button data-bs-toggle="offcanvas" className='menu' href="#menu" role="button" aria-controls="menu"><i className='bi bi-list'></i>Menu</button>
+    <div className="d-flex gap-3 align-items-center">
+  <i class="bi bi-search fs-3"></i>
+  <i class="bi bi-bag-check fs-3"></i>
+    <button data-bs-toggle="offcanvas" className='menu d-flex gap-2' href="#menu" role="button" aria-controls="menu"><i className='bi bi-list'></i>Menu</button>
   </div>
+  </div>
+
 </nav>
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
