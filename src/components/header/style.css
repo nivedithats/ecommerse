@@ -25,3 +25,6 @@ header .menu{
     font-size: 1.2rem !important;
     color: #000 !important;
 }
+.offcanvas{
+    min-height: 70vh !important;
+}

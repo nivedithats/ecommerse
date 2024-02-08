@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
  const data = {
+    id:1,
     mainImage:"https://cdn.pixelspray.io/v2/black-bread-289bfa/YjKxP4/t.resize(w:800)/brooks-product/410391238008/665/410391238008_2_9104.webp",
     images:[
         "https://cdn.pixelspray.io/v2/black-bread-289bfa/YjKxP4/t.resize(w:250)/brooks-product/410391238008/665/410391238008_1_6703.webp",
@@ -18,58 +19,51 @@ import 'slick-carousel/slick/slick-theme.css';
     color:"Oatmeal",
     fit:"slim",
     sizes:['m', 'xl', 'xxl', 'sm'],
-    details:""
+    details:"",
+    colors:["#000", "red", "blue"]
  }
 function ProductView() {
-    const image = {
-        src: 'path-to-your-image.jpg', // Replace with the actual path to your image
-        alt: 'Image Alt Text',
-        className: 'zoom-image', // Add any additional class names if needed
-      };
+
     const [quantity, setQuantity] = useState(0)
     const [num, setNum] = useState(null)
+    // const [cart, setCart] = ({
+    //     productId:"",
+    //     Quantity:quantity,
+    //     price:null,
+    // })
     const Imagesettings = {
         dots: true,
         infinite: true,
-        speed:1000,
+        speed:2000,
         slidesToShow: 1,
         slidesToScroll: 1,
         // cssEase:'linear',
         // fade:true,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000
       };
   return (
     <section className='product-view container-fluid py-5 overflow-hidden'  >
         <h1>{num}</h1>
       <div className="row">
-        <div className="col-12 col-md-6">
-        <Slider {...Imagesettings}>
-   {
-    data.images.map((item, index)=>(
-        <div className="product-view-left w-100">
-            <img src={item} alt="" className="w-100" />
-          
-        </div>
-    ))
-
-   }
-
-   </Slider>
+      <div className="col-12 col-md-6">
+  <Slider {...Imagesettings}>
+    {data.images.map((item, index) => (
+      <div key={index} className="product-view-left w-100">
+        <img src={item} alt="" className="w-100" />
+      </div>
+    ))}
+  </Slider>
   <div className="product-images mt-3">
-  <div className="row">
-                   
-                   {
-   data.images.map((item, index)=>(
-       <div className="col-3">
-       <img src={item} alt="" className="w-100" />
-       </div>
-   ))
-
-  }
-               </div>
-  </div>
+    <div className="row">
+      {data.images.map((item, index) => (
+        <div key={index} className="col-3">
+          <img src={item} alt="" className="w-100" />
         </div>
+      ))}
+    </div>
+  </div>
+</div>
         <div className="col-12 col-md-6">
             <div className="product-right p-0 p-md-3 py-5">
                 <h1 className="fs-3">{data.product}</h1>
@@ -77,7 +71,7 @@ function ProductView() {
 
                 <div className="rate d-flex gap-3">
                     <span className="fs-2">MRP &#8377; {data.price}</span>
-                    <span className="fs-2 text-muted"> &#8377; {data.oldPrice}</span>
+                    <span className="fs-2 text-muted"><del> &#8377; {data.oldPrice}</del></span>
                    
                 </div>
                 <span className="small">Price inclusive of all taxes</span>
@@ -88,6 +82,13 @@ function ProductView() {
                         <img src={data.mainImage} alt="" className="w-100" />
                     </div>
                 </div>
+                <ul className="d-flex mt-3 p-0 gap-5">
+                {
+                    data.colors.map((item, index) => (
+                        <li className='color' key={index} style={{ backgroundColor: item,border:`2px solid ${item}` }}></li>
+                    )) 
+                    }
+                </ul>
                 <p className="fw-bold mt-3"><b>Fit:</b> {data.fit}</p>
                 <div className="row mt-2">
                     <div className="col-6">
@@ -104,13 +105,15 @@ function ProductView() {
                     <div className="col-6">
                         <span className="fs-6">Quantinty</span>
                         <div className="quantity d-flex gap-3">
-                            <button className='btn bg-black text-white fs-4' onClick={()=>setQuantity(quantity+1)}><i className='bi bi-plus'></i></button>
-                        <input type="number" className="form-control" value={quantity} />
                         <button className='btn bg-black text-white fs-4' onClick={()=>{
                             if(quantity>=1){
                                 setQuantity(quantity-1)
                             }
                         }}><i className='bi bi-dash'></i></button>
+                          <input type="number" className="form-control" value={quantity} />
+                            <button className='btn bg-black text-white fs-4' onClick={()=>setQuantity(quantity+1)}><i className='bi bi-plus'></i></button>
+                      
+                       
                         </div>
                     </div>
                 </div>

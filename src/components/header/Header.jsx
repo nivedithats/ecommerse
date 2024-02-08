@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import logo from '../../images/logo.jpg'
+import Products from '../products/Products'
 
 function Header() {
   return (
@@ -28,7 +29,7 @@ function Header() {
         
     </div>
     <div className="d-flex gap-3 align-items-center">
-  <i class="bi bi-search fs-3"></i>
+  <i class="bi bi-search fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"></i>
   <i class="bi bi-bag-check fs-3"></i>
     <button data-bs-toggle="offcanvas" className='menu d-flex gap-2' href="#menu" role="button" aria-controls="menu"><i className='bi bi-list'></i>Menu</button>
   </div>
@@ -84,6 +85,25 @@ function Header() {
         <li className='fs-4'><a href="">Frangrances and Make-Up</a></li>
     </ul>
   
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Search products</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+  <select name="" id="" className="form-select">
+    <option value="">Men</option>
+    <option value="">Women</option>
+    <option value="">Kids</option>
+  </select>
+  <div className="form-group mt-3 d-flex gap-2">
+    <input type="text" className="form-control" placeholder='Search' />
+    <button className="btn bg-black fs-3 text-white"><i className='bi bi-search'></i></button>
+  </div>
+  <Products/>
   </div>
 </div>
     </header>
