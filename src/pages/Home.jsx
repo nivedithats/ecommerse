@@ -120,8 +120,8 @@ function Home() {
   return (
     <div className='home'>
       <HomeHero/>
-      <Featured/>
       <Categorie data={data}/>
+      <Featured/>
       <Services/>
     </div>
   )

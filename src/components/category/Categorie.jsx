@@ -7,8 +7,8 @@ function Categorie({data}) {
       {
         data.map((item, index)=>(
             <>
-            <h1 className="display-4 py-3">{item.categorie}</h1>
-      <div className="categories-container d-flex gap-3 flex-nowrap">
+            <h1 className="display-4 p-3">{item.categorie}</h1>
+      <div className="categories-container p-3 d-flex gap-3 flex-nowrap">
             {
                 item.products.map((item, index)=>(
                     <div className="category-card card" key={index}>

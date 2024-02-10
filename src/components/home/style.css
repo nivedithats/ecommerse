@@ -1,6 +1,7 @@
 .categories-card{
     position: relative;
     color: #fff;
+    min-width: 340px;
 }
 .categories-card img{
     height: 80vh !important;

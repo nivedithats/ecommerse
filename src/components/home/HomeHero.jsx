@@ -36,10 +36,27 @@ function HomeHero() {
   return (
     <div className="home-hero">
       <div className="container-fluid">
-        <div className="row align-items-center justify-content-center">
+    <div className="d-none d-md-block">
+    <div className="row align-items-center justify-content-center">
            {
             data.map((item, index)=>(
                 <div className="col-12 col-sm-12 col-md-6 p-4">
+              <div className="categories-card" data-aos="fade-up">
+              <img src={item.img} alt={item.title} className='h-100 w-100' />
+              <div className="category-text">
+                <h1 className="fs-1">{item.title}</h1>
+               <a href="/products"> <button>EXPLORE THE COLLECTION</button></a>
+              </div>
+              </div>
+                </div>
+            ))
+           }
+        </div>
+    </div>
+        <div className="d-flex overflow-auto d-block d-md-none">
+           {
+            data.map((item, index)=>(
+                <div className="">
               <div className="categories-card" data-aos="fade-up">
               <img src={item.img} alt={item.title} className='h-100 w-100' />
               <div className="category-text">
