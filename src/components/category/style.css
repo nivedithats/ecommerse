@@ -1,0 +1,11 @@
+.category-card{
+    min-width: 320px;
+}
+.category-card .card-header img{
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.categories-container {
+    overflow: auto;
+}
