@@ -53,7 +53,7 @@ function HomeHero() {
            }
         </div>
     </div>
-        <div className="d-flex overflow-auto d-block d-md-none main-category-container">
+        <div className="d-flex gap-1 overflow-auto d-block d-md-none main-category-container">
            {
             data.map((item, index)=>(
                 <div className="">

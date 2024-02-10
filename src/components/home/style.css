@@ -7,7 +7,7 @@
     
 }
 .categories-card img{
-    height: 80vh !important;
+    height: 60vh !important;
     object-fit: cover;
 }
 .category-text{
