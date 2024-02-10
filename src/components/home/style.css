@@ -2,6 +2,9 @@
     position: relative;
     color: #fff;
     min-width: 340px;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    
 }
 .categories-card img{
     height: 80vh !important;
@@ -28,4 +31,14 @@
     box-shadow: 0px 0px 2px #b1b1b1;
     font-weight: 500;
     margin-top: 20px;
+}
+.main-category-container{
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+        display: none;
+      }
 }

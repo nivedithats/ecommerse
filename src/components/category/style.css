@@ -1,6 +1,8 @@
 .category-card{
     min-width: 320px !important;
     width: 320px;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
 }
 .category-card .card-header img{
     height: 250px;
@@ -9,4 +11,11 @@
 }
 .categories-container {
     overflow: auto;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+        display: none;
+      }
 }
