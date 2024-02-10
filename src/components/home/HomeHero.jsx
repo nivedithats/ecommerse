@@ -35,7 +35,7 @@ function HomeHero() {
       }, []);
   return (
     <div className="home-hero">
-      <div className="container-fluid">
+      <div className="container-fluid p-0 p-md-2">
     <div className="d-none d-md-block">
     <div className="row align-items-center justify-content-center">
            {
@@ -53,7 +53,7 @@ function HomeHero() {
            }
         </div>
     </div>
-        <div className="d-flex overflow-auto d-block d-md-none">
+        <div className="d-flex overflow-auto d-block d-md-none main-category-container">
            {
             data.map((item, index)=>(
                 <div className="">
