@@ -1,7 +1,7 @@
 .categories-card{
     position: relative;
     color: #fff;
-    min-width: 340px;
+    min-width: 320px;
     scroll-behavior: smooth;
     scroll-snap-align: center;
     

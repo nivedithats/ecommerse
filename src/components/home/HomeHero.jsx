@@ -60,7 +60,7 @@ function HomeHero() {
               <div className="categories-card" data-aos="fade-up">
               <img src={item.img} alt={item.title} className='h-100 w-100' />
               <div className="category-text">
-                <h1 className="fs-1">{item.title}</h1>
+                <h1 className="fs-2">{item.title}</h1>
                <a href="/products"> <button>EXPLORE THE COLLECTION</button></a>
               </div>
               </div>
