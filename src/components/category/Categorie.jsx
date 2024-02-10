@@ -12,7 +12,7 @@ function Categorie({data}) {
             {
                 item.products.map((item, index)=>(
                     <div className="category-card card" key={index}>
-                        <div className="card-header bg-transparent">
+                        <div className="card-header bg-transparent p-0">
                             <img src={item.image} alt="" className="w-100" />
                         </div>
                         <div className="card-body">
