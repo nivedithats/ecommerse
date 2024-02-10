@@ -1,5 +1,5 @@
 .category-card{
-    min-width: 320px;
+    min-width: 320px !important;
     width: 320px;
 }
 .category-card .card-header img{
