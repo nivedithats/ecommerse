@@ -1,0 +1,14 @@
+.cart-item img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.bg-delete{
+    background-color: #c8c5c5;
+}
+@media (max-width:768px){
+    .cart-item img{
+        width: 60px;
+        height: 80px;
+    }
+}

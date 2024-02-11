@@ -26,6 +26,7 @@ function ProductView() {
 
     const [quantity, setQuantity] = useState(0)
     const [num, setNum] = useState(null)
+    const [cart, setCart] = useState([])
     // const [cart, setCart] = ({
     //     productId:"",
     //     Quantity:quantity,
@@ -42,6 +43,24 @@ function ProductView() {
         autoplay: true,
         autoplaySpeed: 2000
       };
+
+      const newCartItem = {
+        id: data.id,
+        name: data.product,
+        price: data.price,
+        quantity: quantity
+      };
+
+      const addToCart = () =>{
+        // Retrieve existing cart items from local storage
+        const existingCartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Add the new cart item to the existing items
+        const updatedCart = [...existingCartItems, newCartItem];
+
+        // Update the local storage with the updated cart
+        localStorage.setItem('cart', JSON.stringify(updatedCart));
+      }
   return (
     <section className='product-view container-fluid py-5 overflow-hidden'  >
         <h1>{num}</h1>
@@ -118,9 +137,7 @@ function ProductView() {
                     </div>
                 </div>
                 <div className="d-flex gap-2 mt-3 align-items-center bg-white actions">
-                <a href="/signup" className='w-100'>
-                      <button className="w-100 btn-dark btn p-3 bg-black rounded-0 fs-5">ADD TO BAG</button>
-                      </a>
+                <button className="w-100 btn-dark btn p-3 bg-black rounded-0 fs-5" onClick={addToCart}>ADD TO BAG</button>
                       <a href="/review" className='w-100'>
                       <button className="btn fs-5 w-100  p-3 btn-outline-dark rounded-0"><i className='bi bi-cart'></i>Order Now</button>
                       </a>
