@@ -3,11 +3,11 @@ import './style.css'
 
 function SignUp() {
   return (
-    <div className='account-container container-fluid p-2 p-md-5 bg-light'>
+    <div className='account-container container-fluid p-3 p-md-5 bg-light'>
         <div className="row h-100 align-items-center ">
             <div className="col-md-4 offset-md-4">
                 <div className="card shadow border-0">
-                    <div className="card-header">
+                    <div className="card-header p-0">
                         <img src="https://images.meesho.com/images/marketing/1661417516766.webp" alt="image" className="w-100" />
                     </div>
                     <div className="card-body py-3">

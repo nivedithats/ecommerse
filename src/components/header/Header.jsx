@@ -1,17 +1,17 @@
 import React from 'react'
 import './style.css'
-import logo from '../../images/logo.jpg'
+import logo from '../../images/logo.png'
 import Products from '../products/Products'
 
 function Header() {
   return (
     <header className='bg-white'>
-      <nav class="navbar navbar-expand-md">
-  <div class="container-fluid d-flex align-items-center justify-content-between flex-nowrap">
+      <nav class="navbar navbar-expand-md align-items-center">
+  <div class="container-fluid d-flex align-items-center justify-content-between flex-nowrap ">
       <a class="nav-link mx-2 d-none d-md-block" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
       <h1 className="fs-5 d-inline"><i className='bi bi-plus'></i>Contact us</h1>
     </a>
-    <img src={logo} alt="" width={80} className='mx-3' />
+    <img src={logo} alt="" width={180} className='mx-3' />
 
     <div class="collapse navbar-collapse d-none d-md-block" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">

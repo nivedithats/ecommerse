@@ -32,11 +32,7 @@
 .slick-dots li{
     height: 20px !important;
 }
-.cart{
-    box-shadow: 0px 0px 10px #e3e3e3;
-    border-radius: 100px !important;
-    background-color: #fff;
-}
+
 .color{
     width: 40px;
     height: 40px;
@@ -45,4 +41,8 @@
     outline: 2px solid #000;
     outline-offset: 5px;
 
+}
+.actions{
+    position: sticky !important;
+    bottom: 0;
 }

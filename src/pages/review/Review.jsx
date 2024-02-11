@@ -47,7 +47,7 @@ function Review() {
             </div>
             <div className="col-12 col-sm-12 col-md-5">
                 <div className="review-right border-left">
-                    <div className="card p-3">
+                    <div className="card p-3 mt-3">
                         <p className="fs-4 fw-bold">Price Details</p>
                         <span className="fs-5 d-flex gap-2 justify-content-between text-secondary"><small>Total Product Price</small> <small>&#8377; {data.price}</small></span>
                         <span className="fs-5 d-flex gap-2 justify-content-between"><small>Total Discounts</small> <small>&#8377; 15</small></span>

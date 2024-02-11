@@ -82,13 +82,13 @@ function ProductView() {
                         <img src={data.mainImage} alt="" className="w-100" />
                     </div>
                 </div>
-                <ul className="d-flex mt-3 p-0 gap-5">
+                {/* <ul className="d-flex mt-3 p-0 gap-5">
                 {
                     data.colors.map((item, index) => (
                         <li className='color' key={index} style={{ backgroundColor: item,border:`2px solid ${item}` }}></li>
                     )) 
                     }
-                </ul>
+                </ul> */}
                 <p className="fw-bold mt-3"><b>Fit:</b> {data.fit}</p>
                 <div className="row mt-2">
                     <div className="col-6">
@@ -117,18 +117,13 @@ function ProductView() {
                         </div>
                     </div>
                 </div>
-                <div className="row mt-3 align-items-center">
-                    <div className="col-10 col-md-8">
-                      <a href="/signup">
-                      <button className="w-100 btn-dark btn p-3 bg-black rounded-0">ADD TO BAG</button>
+                <div className="d-flex gap-2 mt-3 align-items-center bg-white actions">
+                <a href="/signup" className='w-100'>
+                      <button className="w-100 btn-dark btn p-3 bg-black rounded-0 fs-5">ADD TO BAG</button>
                       </a>
-                    </div>
-                    <div className="col-2 col-md-4 text-center">
-                      <a href="/review">
-                      <button className="btn fs-2 cart"><i className='bi bi-cart'></i></button>
+                      <a href="/review" className='w-100'>
+                      <button className="btn fs-5 w-100  p-3 btn-outline-dark rounded-0"><i className='bi bi-cart'></i>Order Now</button>
                       </a>
-                       
-                    </div>
                 </div>
             </div>
         </div>
