@@ -7,6 +7,8 @@ import Header from './components/header/Header'
 import Products from './components/products/Products'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import ProductView from './pages/productView/ProductView'
+import SignUp from './components/account/SignUp'
+import Review from './pages/review/Review'
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/products' element={<Products/>}/>
         <Route path='/product/view' element={<ProductView/>}/>
+        <Route path='/signup'  element={<SignUp/>}/>
+        <Route path='/review'  element={<Review/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

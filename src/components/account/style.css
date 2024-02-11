@@ -1,0 +1,6 @@
+.account-container{
+    min-height: 100vh;
+}
+.account-container .card-header{
+    min-height: 200px;
+}

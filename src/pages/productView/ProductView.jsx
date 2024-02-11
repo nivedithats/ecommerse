@@ -119,10 +119,15 @@ function ProductView() {
                 </div>
                 <div className="row mt-3 align-items-center">
                     <div className="col-10 col-md-8">
-                        <button className="w-100 btn-dark btn p-3 bg-black rounded-0">ADD TO BAG</button>
+                      <a href="/signup">
+                      <button className="w-100 btn-dark btn p-3 bg-black rounded-0">ADD TO BAG</button>
+                      </a>
                     </div>
                     <div className="col-2 col-md-4 text-center">
-                        <button className="btn fs-2 cart"><i className='bi bi-cart'></i></button>
+                      <a href="/review">
+                      <button className="btn fs-2 cart"><i className='bi bi-cart'></i></button>
+                      </a>
+                       
                     </div>
                 </div>
             </div>
