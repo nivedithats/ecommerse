@@ -64,13 +64,13 @@ function Products() {
        <div className="row">
        {
             products.map((item, index)=>(
-               <div className="col-12 col-sm-12 col-md-4 col-lg-3">
+               <div className="col-6 col-sm-6 col-md-4 col-lg-3">
                <a href="/product/view" className="text-decoration-none text-dark">
 
                <div className="product-card mb-3 p-2 bg-white">
                     <img src={item.image} alt="" className="w-100" />
                     <span className="fs-5 d-block fw-bold">{item.title}</span>
-                    <small className="small desc">{(item.desc).slice(0, 100)}</small>
+                    {/* <small className="small desc">{(item.desc).slice(0, 100)}</small> */}
                     <div className="w-100 gap-3 d-flex align-items-center justify-conten-between">
                         <span className="fs-5 muted strike"><del>&#8377;{item.oldPrice}</del></span>
                         <span className="fs-5">&#8377;{item.newPrice}</span>
