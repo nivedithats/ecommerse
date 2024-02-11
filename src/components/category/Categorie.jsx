@@ -29,8 +29,12 @@ function Categorie({data}) {
                             <p className="fs-6">{item.description}</p>
                     </div>
                         <div className="card-footer d-flex flex-nowrap gap-2 bg-transparent">
-                            <button className="btn bg-black w-100 p-2 text-white rounded-0">Buy now</button>
-                            <button className="btn btn-outline-dark w-100 rounded-0">Add to bag</button>
+                          <a href="/product/view" className='w-100'>
+                          <button className="btn bg-black w-100 p-2 text-white rounded-0">Buy now</button>
+                          </a>
+                          <a href="/signup" className='w-100'>
+                          <button className="btn btn-outline-dark w-100 rounded-0 p-2">Add to bag</button>
+                          </a>
                         </div>
                     </div>
                 ))
